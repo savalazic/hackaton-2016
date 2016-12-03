@@ -1,8 +1,13 @@
 .searchWrapper {
 	position: relative;
-	height: 100vh;
+	height: 84vh;
 	max-width: 900px;
 	margin: 0 auto;
+}
+
+main {
+  min-height: 84vh;
+  position: relative;
 }
 
 .searchForm {
@@ -22,6 +27,7 @@
 	font-size: 27px;
 	padding: 10px 20px;
 	color: $color-text;
+  background: transparent;
 
 	&:focus ~ .bar:before{
 		width: 100%;
@@ -79,3 +85,47 @@ input:focus + label,
   }
 
 
+.searchHeader {
+  padding: 80px 0;
+  background: $color-primary;
+
+  .searchForm {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    max-width: 500px;
+  }
+
+  .searchInput {
+    display: inline-block;
+    width: 90%;
+    color: $color-white;
+    border-bottom: 1px solid $color-white;
+  }
+}
+
+.searchMain {
+  padding-top: 40px;
+}
+
+.searchResults {
+  color: $color-text;
+  margin-bottom: 30px;
+}
+
+.searchItem {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  max-width: 900px;
+}
+
+.searchItem-link {
+  color: #333;
+}
+
+.searchItem-desc {
+  color: $color-text;
+  font-size: 16px;
+}

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Brand name</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="public/css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400,500" rel="stylesheet">
@@ -19,7 +19,7 @@
 
   <nav>
         <div class="container-fluid">
-          <a class="navbarBrand" href="#">Logo</a>
+          <a class="navbarBrand" href="index.php"><img src="public/img/logo.png" alt=""></a>
           <a class="navbarMenu" href="#"><i class="fa fa-th" aria-hidden="true"></i></a>
         </div>
       </nav>

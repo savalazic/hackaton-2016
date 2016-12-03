@@ -36,3 +36,13 @@ a, button {
 	right: 10px;
 	top: 0;
 }
+
+.searchButton--icon {
+	display: inline-block;
+	background: none;
+	outline: none;
+	border: none;
+	margin-left: -45px;
+	color: $color-white;
+	font-size: 23px;
+}
