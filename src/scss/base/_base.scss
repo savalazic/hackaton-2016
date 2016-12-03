@@ -32,7 +32,10 @@ blockquote::after { content: close-quote; }
  */
 
 h1 {
-	font-size: 350%;
+	font-weight: 300!important;
+  font-size: 40px!important;
+  margin-bottom: 50px!important;
+  text-align: center;
 }
 
 h2 {

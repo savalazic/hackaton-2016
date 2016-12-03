@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
-    <title>Woogla</title>
+    <title>Woogla | About</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="public/css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400,500" rel="stylesheet">
@@ -25,18 +25,22 @@
       </nav>
 
       <main>
-
+      
         <div class="container">
-
-          <div class="searchWrapper">
-            <form class="searchForm" action="">
-              <input class="searchInput" id="search" type="text" autofocus>
-              <label class="searchLabel" for="search">What you are looking for?</label>
-              <a class="searchVoice" href="javascript:void(0)"><i class="fa fa-microphone" aria-hidden="true"></i></a>
-              <span class="bar"></span>
-              <button class="searchBtn" type="submit">Search</button>
-            </form>
+          <h1>Prica o Wooglu</h1>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Woogla je internet pretrazivac  razvijen na Bite of a web hakatonu 3.12.2016. organizvanom od strane Brand new engineers pod okriljem nase poznate firme Byteout. Woogla je open source projekat namenjen da pomogne mladim developerima kao i php zajednici.</p> 
+            </div>
+            <div class="col-sm-6">
+              <img class="aboutImg" src="public/img/about.jpg" alt="">
+            </div>
+            
           </div>
+
+          <p>Razvijen je od strane Ga2s team-a, koji je pre sveg sastavljen od drugara fokusiranim na web development. Ovim putem zelimo takodje da se zahvalimo I organizatorima na odlicno organizovanom hakatonu, omogucili su nam da u odlicnim uslovima (PUNIH STOMAKA) radimo na ovom projektu.</p>
+
+          <a href="http://ga2s.net/en/">GA2S Team</a>
 
         </div>
         
