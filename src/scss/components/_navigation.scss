@@ -1,0 +1,58 @@
+/**
+ *
+ * Navigation
+ *
+ */
+
+.navbar-toggle {
+  border: 0;
+  background: transparent!important;
+}
+
+.icon-bar {
+  transition: all .3s;
+}
+
+.top-bar {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.middle-bar {
+  opacity: 0;
+}
+
+.bottom-bar {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.navbar-toggle.collapsed {
+  .top-bar {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  .middle-bar {
+    opacity: 1;
+  }
+
+  .bottom-bar {
+    top: 0;
+    transform: rotate(0);
+  }
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+
+  a {
+    color: $color-text;
+  }
+}
+
+.navbarMenu {
+  float: right;
+  font-size: 25px;
+} 

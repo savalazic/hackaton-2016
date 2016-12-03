@@ -1,0 +1,66 @@
+@import 'color';
+@import 'typography';
+@import 'animation';
+
+body {
+  font: $font-size $font-stack!important;
+  color: $color-text;
+}
+
+html, body {
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+@include selection($color-primary, #fff);
+
+section {
+  padding: 80px 0;
+}
+
+blockquote::before { content: open-quote; }
+blockquote::after { content: close-quote; }
+
+:lang(en) q { quotes: "“" "”"; }
+:lang(fr) q { quotes: "«" "»"; }
+:lang(pl) q { quotes: "„" "”"; }
+
+/**
+ *
+ * Heading styles
+ *
+ */
+
+h1 {
+	font-size: 350%;
+}
+
+h2 {
+	font-size: 250%;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+p {
+  line-height: 145%;
+}
+
+::-webkit-input-placeholder { 
+  color: $color-placeholder;
+  font-size: 27px;
+}
+::-moz-placeholder { 
+  color: $color-placeholder;
+  font-size: 27px;
+}
+:-ms-input-placeholder { 
+  color: $color-placeholder;
+  font-size: 27px;
+}
+:-moz-placeholder { 
+  color: $color-placeholder;
+  font-size: 27px;
+}

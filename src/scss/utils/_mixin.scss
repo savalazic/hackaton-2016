@@ -1,0 +1,109 @@
+/**
+ *
+ * Mixins
+ *
+ */
+
+/* absolute center */
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+}
+
+/* border-radius */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/* gradient */
+@mixin gradient($start-color, $end-color) {
+  background: $end-color;
+  background: -moz-linear-gradient(top, $start-color 0%, $end-color 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-color), color-stop(100%,$end-color));
+  background: -webkit-linear-gradient(top, $start-color 0%,$end-color 100%);
+  background: -o-linear-gradient(top, $start-color 0%,$end-color 100%);
+  background: -ms-linear-gradient(top, $start-color 0%,$end-color 100%);
+  background: linear-gradient(top bottom, $start-color 0%,$end-color 100%);
+}
+
+/* box-shadow */
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+/* round element */
+@mixin rounded($radius: 100%) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/* background-cover */
+@mixin background($cover) {
+  -webkit-background-size: $cover;
+  -moz-background-size: $cover;
+  -o-background-size: $cover;
+  background-size: $cover;
+}
+
+/* transition */
+@mixin transition($transition-property,$transition-time) {
+  -webkit-transition:$transition-property $transition-time;
+    -moz-transition:$transition-property $transition-time;
+    -o-transition:$transition-property $transition-time;
+    transition: $transition-property $transition-time;
+}
+
+/* hover, active, focus */
+@mixin hover-active-focus {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}
+
+/* ::selection */
+@mixin selection( $background, $foreground:#fff ) {
+  ::-moz-selection { 
+    background: $background;
+    color: $foreground;
+    text-shadow: none; 
+  }
+  ::selection { 
+    background: $background;
+    color: $foreground;
+    text-shadow: none; 
+  }
+}
+
+/* ::placeholder */
+@mixin form-placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
