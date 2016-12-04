@@ -21,6 +21,11 @@
         <div class="container-fluid">
           <a class="navbarBrand" href="index.php"><img src="public/img/logo.png" alt=""></a>
           <a class="navbarMenu" href="#"><i class="fa fa-th" aria-hidden="true"></i></a>
+          <div class="navMenu">
+            <a href="#">A</a>
+            <a href="#">B</a>
+            <a href="#">C</a>
+          </div>
         </div>
       </nav>
 
@@ -30,7 +35,7 @@
 
           <div class="searchWrapper">
             <form class="searchForm" action="">
-              <input class="searchInput" id="search" type="text" autofocus>
+              <input class="searchInput" id="search" type="text" name="searchInput" autofocus>
               <label class="searchLabel" for="search">What you are looking for?</label>
               <a class="searchVoice" href="javascript:void(0)"><i class="fa fa-microphone" aria-hidden="true"></i></a>
               <span class="bar"></span>

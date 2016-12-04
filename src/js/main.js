@@ -5,6 +5,10 @@ $(function(){
   var searchBtn = $('.searchBtn');
   var searchLabel = $('.searchLabel');
 
+  $('.navbarMenu').on('click', function() {
+    $('.navMenu').toggleClass('is-visible');
+  });
+
   $('button').on('click', function(e) {
   	e.preventDefault();
   	console.log('CLICKED');

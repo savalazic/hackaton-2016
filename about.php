@@ -31,16 +31,19 @@
           <div class="row">
             <div class="col-sm-6">
               <p>Woogla je internet pretrazivac  razvijen na Bite of a web hakatonu 3.12.2016. organizvanom od strane Brand new engineers pod okriljem nase poznate firme Byteout. Woogla je open source projekat namenjen da pomogne mladim developerima kao i php zajednici.</p> 
+              <p>Razvijen je od strane Ga2s team-a, koji je pre sveg sastavljen od drugara fokusiranim na web development. Ovim putem zelimo takodje da se zahvalimo I organizatorima na odlicno organizovanom hakatonu, omogucili su nam da u odlicnim uslovima (PUNIH STOMAKA) radimo na ovom projektu.</p>
             </div>
             <div class="col-sm-6">
               <img class="aboutImg" src="public/img/about.jpg" alt="">
             </div>
+
+            <div class="col-sm-12">
+              <h1 class="ga2sLink"><a href="http://ga2s.net/en/">GA<sup>2</sup>S Team</a></h1>
+              
+            </div>
             
+          
           </div>
-
-          <p>Razvijen je od strane Ga2s team-a, koji je pre sveg sastavljen od drugara fokusiranim na web development. Ovim putem zelimo takodje da se zahvalimo I organizatorima na odlicno organizovanom hakatonu, omogucili su nam da u odlicnim uslovima (PUNIH STOMAKA) radimo na ovom projektu.</p>
-
-          <a href="http://ga2s.net/en/">GA2S Team</a>
 
         </div>
         
