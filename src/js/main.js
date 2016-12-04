@@ -14,6 +14,17 @@ $(function(){
   	console.log('CLICKED');
   });
 
+  $.ajax({
+    type: 'GET',
+    url: 'search.php',
+    success: function() {
+      search.val();
+    },
+    error: function() {
+      console.log('Error');
+    }
+  });
+
   var availableTags = [];
 
   $.ajax({
