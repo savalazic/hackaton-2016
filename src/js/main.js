@@ -9,37 +9,71 @@ $(function(){
     $('.navMenu').toggleClass('is-visible');
   });
 
-  $('button').on('click', function(e) {
-  	e.preventDefault();
-  	console.log('CLICKED');
-  });
+  // $('button').on('click', function(e) {
+  // 	e.preventDefault();
 
-  $.ajax({
-    type: 'GET',
-    url: 'search.php',
-    success: function() {
-      search.val();
-    },
-    error: function() {
-      console.log('Error');
-    }
-  });
+  //   $.ajax({
+  //     type: 'GET',
+  //     url: 'searchAlg.php?searchInput=imdb',
+  //     success: function() {
+  //       console.log('success');
+  //       search.val();
+  //     },
+  //     error: function() {
+  //       console.log('Error');
+  //     }
+  //   });
+    
+  // });
 
-  var availableTags = [];
+  // $.getJSON('searchAlg.php?searchInput=imdb', function(data) {
+  //   console.log('success');
+  //   console.log(data);
+  // });
 
-  $.ajax({
-    type: 'GET',
-    url: 'results.json',
-    dataType: 'json',
-    success: function(data) {
-      $.each(data.posts, function(i, item) {
-        console.log(item.title);
-        availableTags.push(item.title);
-      });
-    },
-    error: function() {
-      console.log('Error');
-    }
+  // $.ajax({
+  //   type: 'GET',
+  //   url: 'searchAlg.php?searchInput=imdb',
+  //   dataType: 'json',
+  //   success: function(data) {
+  //     console.log('success');
+  //     console.log(data);
+  //   },
+  //   error: function() {
+  //     console.log('error ajax');
+  //   }
+  // });
+
+
+  // var availableTags = [];
+
+  // $.ajax({
+  //   type: 'GET',
+  //   url: 'searchAlg.php',
+  //   dataType: 'json',
+  //   success: function(data) {
+  //     $.each(data.posts, function(i, item) {
+  //       console.log(item.title);
+  //       availableTags.push(item.title);
+  //     });
+  //   },
+  //   error: function() {
+  //     console.log('Error loading data');
+  //   }
+  // });
+
+  // search.autocomplete({
+  //   source: function(request, response) {
+  //     var results = $.ui.autocomplete.filter(availableTags, request.term);
+  //     response(results.slice(0, 10));
+  //   }
+  // });
+
+  searchVoice.on('click', function(e) {
+    e.preventDefault();
+    search.addClass('has-value');
+    searchLabel.text('Say something');
+    startConverting();
   });
 
   search.focusout(function(){
@@ -50,20 +84,6 @@ $(function(){
     } else {
       $(this).addClass('has-value');
     }
-  });
-
-  search.autocomplete({
-    source: function(request, response) {
-      var results = $.ui.autocomplete.filter(availableTags, request.term);
-      response(results.slice(0, 10));
-    }
-  });
-
-  searchVoice.on('click', function(e) {
-    e.preventDefault();
-    search.addClass('has-value');
-    searchLabel.text('Say something');
-    startConverting();
   });
 
   var searchInput = document.getElementById('search');
